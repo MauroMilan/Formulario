@@ -15,9 +15,24 @@
     <h1 id="mainTitle" class="text-center">Manipulación del DOM</h1>
 
     <form>
-        <label for="nameIpt">Nombre: </label>
-        <input id="nameIpt" type="text">
+        <div class="formGroup">
+            <label for="nameIpt">Nombre: </label>
+            <input id="nameIpt" type="text">
+        </div>
+
+
+        <div class="formGroup">
+            <label for="emailIpt">Email: </label>
+            <input id="emailIpt" type="email">
+        </div>
+
+        <div class="formGroup">
+            <label for="ageIpt">Edad: </label>
+            <input id="ageIpt" type="number">
+        </div>
+
         <button id="formBtn" type="submit" class="btn btn-primary"> Mostrar</button>
+        <button id="resetBtn" type="reset" class="btn btn-primary"> Recargar</button>
 
     </form>
 
@@ -27,6 +42,14 @@
         Necesitas ingresar tu nombre
     </div>
 
+    <div id="feedbackEmail" class="alert alert-warning" role="alert" , style="display: none;">
+        Ingresa un correo valido
+    </div>
+
+    <div id="feedbackAge" class="alert alert-dark" role="alert" , style="display: none;">
+        Ingresa una edad valida
+    </div>
+
     <script src="./javascript/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -34,7 +57,7 @@
 
 
 
-    
+
 
 </body>
 
